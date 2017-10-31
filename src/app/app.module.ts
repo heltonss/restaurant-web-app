@@ -24,6 +24,7 @@ import { OrderComponent } from './order/order.component';
 import { InputContainerComponent } from './shared/input-container/input-container.component';
 import { InputRadioComponent } from './shared/input-radio/input-radio.component';
 import { SnackbarComponent } from './shared/messages/snackbar/snackbar.component';
+import { NotificationService } from 'app/shared/notification.service';
 
 
 @NgModule({
@@ -52,7 +53,7 @@ import { SnackbarComponent } from './shared/messages/snackbar/snackbar.component
     MtRoutingModule,
     BrowserAnimationsModule
   ],
-  providers: [RestaurantsService, AppApi, ShoppingCartService, { provide: LOCALE_ID, useValue: 'pt-BR' }],
+  providers: [RestaurantsService, AppApi, NotificationService, ShoppingCartService, { provide: LOCALE_ID, useValue: 'pt-BR' }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
