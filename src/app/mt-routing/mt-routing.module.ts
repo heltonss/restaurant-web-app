@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
 import { AboutComponent } from 'app/about/about.component';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from 'app/home/home.component';
@@ -8,6 +9,7 @@ import { RestaurantDetailComponent } from 'app/restaurant-detail/restaurant-deta
 import { MenuComponent } from 'app/restaurant-detail/menu/menu.component';
 import { ReviewsComponent } from 'app/restaurant-detail/reviews/reviews.component';
 import { OrderComponent } from 'app/order/order.component';
+import { LoginComponent } from 'app/security/login/login.component';
 
 const routes: Routes = [
 
@@ -43,9 +45,13 @@ const routes: Routes = [
     component: OrderComponent
   },
   {
+    path: 'login',
+    component: LoginComponent
+  },
+  {
     path: '',
     component: HomeComponent
-  },
+  }
 ]
 
 @NgModule({
