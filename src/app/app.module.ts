@@ -26,6 +26,7 @@ import { InputRadioComponent } from './shared/input-radio/input-radio.component'
 import { SnackbarComponent } from './shared/messages/snackbar/snackbar.component';
 import { NotificationService } from 'app/shared/notification.service';
 import { LoginComponent } from './security/login/login.component';
+import { UserDetailComponent } from './header/user-detail/user-detail.component';
 
 
 @NgModule({
@@ -45,7 +46,8 @@ import { LoginComponent } from './security/login/login.component';
     InputContainerComponent,
     InputRadioComponent,
     SnackbarComponent,
-    LoginComponent
+    LoginComponent,
+    UserDetailComponent
   ],
   imports: [
     BrowserModule,
